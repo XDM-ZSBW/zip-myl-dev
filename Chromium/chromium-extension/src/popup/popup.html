@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Extension Popup</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div id="popup-container">
+        <h1>Welcome to the Extension</h1>
+        <p>This is a simple popup for your Chromium extension.</p>
+        <button id="action-button">Click Me!</button>
+    </div>
+    <div id="notoken" style="display:none;">
+        <h3>Link Extension</h3>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button id="sendlink">Send Magic Link</button>
+        <div id="emailStatus"></div>
+        <div id="qrcode" style="display:none;"></div>
+        <p id="qrdesc" style="display:none;">Scan this QR code on your phone to complete 2FA.</p>
+    </div>
+    <div id="withtoken" style="display:none;">
+        <h3>Form Memory</h3>
+        <div id="siteStatus"></div>
+        <button id="turnoff" style="display:none;">Turn Off For This Site</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

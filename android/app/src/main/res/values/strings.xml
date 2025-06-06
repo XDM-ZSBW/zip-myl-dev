@@ -1,0 +1,9 @@
+<attachment id="file:/my-android-app/my-android-app/app/src/main/res/values/strings.xml">
+<string-resources>
+    <resources>
+        <string name="app_name">My Android App</string>
+        <string name="hello_world">Hello World!</string>
+        <string name="action_settings">Settings</string>
+    </resources>
+</string-resources>
+</attachment>
